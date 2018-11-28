@@ -1,5 +1,4 @@
-@import '../../styles/variables';
-@import '../../styles/buttons';
+@import '../../partials';
 
 .pomodoro-timer {
   box-sizing: border-box;
@@ -8,17 +7,31 @@
   align-items: center;
   margin-top: 25px;
 
+  @include breakpoint(phone) {
+    margin-top: 0px;
+  }
+
   &__h1 {
     font-family: $title-font-family;
     font-size: 64px;
     color: $title-color;
+
+    @include breakpoint(phone) {
+      margin-bottom: 0;
+    }
   }
 
   &__container {
     border: 1px solid #EEE;
     border-radius: 30px;
-    padding: 20px;
+    padding: 5px 20px 40px 20px;
     box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.15);
+
+    @include breakpoint(phone) {
+      border: none;
+      box-shadow: none;
+      padding: 0px;
+    }
   }
 
   &__controls {
