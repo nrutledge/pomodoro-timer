@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+@import '../../styles/buttons';
+
+.pomodoro-timer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+
+  &__h1 {
+    font-family: $title-font-family;
+    font-size: 64px;
+    color: $title-color;
+  }
+
+  &__container {
+    border: 1px solid #EEE;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &__controls {
+    display: flex;
+  }
+
+  &__btn {
+    @include button($btn-color);
+    width: 150px;
+  }
+
+  &__btn--reset {
+    @include button($btn-color-danger);
+  }
+}

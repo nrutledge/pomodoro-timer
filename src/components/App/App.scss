@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import '../../styles/variables';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+

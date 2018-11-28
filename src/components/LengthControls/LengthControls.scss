@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/buttons';
+
+.length-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  &__h2 {
+    font-weight: 400;
+    margin: 10;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    @include button($btn-color);
+    width: 35px;
+  }
+  
+  &__length {
+    width: 50px;
+    font-size: 36px;
+    text-align: center;
+  }
+}
